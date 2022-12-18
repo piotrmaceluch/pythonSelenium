@@ -1,0 +1,24 @@
+======== .CLASS ==================================================
+for example class: '.subcategory'
+can be used to identify many elements
+
+======== #ID =====================================================
+for example ID: '#subcategory'
+can be used to identify only 1 element
+
+======== TAG =====================================================
+-> single tag can have multiple classes
+-> single tag cam have only 1 id
+
+<div>                               opening tab
+<section class="price">             opening tag with class
+<section class="price value name">  opening tag with multiple classes
+<section id="fname">                opening tag with id
+======== PARENT AND CHILDS ===
+<div class="fruit vegetable animal">            parent
+    <tbody>                                     child
+        <nav id="mainWindow">                   child
+            <tr>                                 \
+            <tr>                                 | siblings
+            <tr>                                 /
+

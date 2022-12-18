@@ -1,0 +1,43 @@
+======== CSS ============================================================
+- only move forwards
+
+<button class="btn btn-primary" id="sendButton"
+button[id='sendButton']
+
+where   tag = button
+        attribute = id
+
+# = ID, #sendButton == button[id='sendButton']
+. = class
+======== Descendant =====================================================
+ ul li
+ ul li[id='fruits']
+======== Direct Descendant ==============================================
+ ul>li
+======== Adjacent sibling ===============================================
+ ul+li
+======== Far sibling ====================================================
+ ul~li
+======== Combinator =====================================================
+.button.upload      f.e. <div class="button upload"
+======== Attribute Selectors ============================================
+ = Exact
+    [role="dialog"]
+ ^ Begins with
+    [href^="/index"]
+ $ Ends in
+    [href$=".doc"]
+ * contains
+    [class*="-is-"]
+======== Pseudo-classes =================================================
+:disabled
+    input[name="vegetable"]:disabled
+:enabled
+    input[name="vegetable"]:enabled
+:checked
+    input[name="vegetable"]:checked
+========
+
+========
+
+

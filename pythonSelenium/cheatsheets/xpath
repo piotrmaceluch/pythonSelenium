@@ -1,0 +1,12 @@
+===== XPATH =====================================================
+
+-move forwards and backwards
+-can search for parent, sibling etc.
+-can create selector for text: //*[text()='Send']
+
+<button class="btn btn-primary" id="sendButton"
+
+     //button[@id='sendButton']
+
+where:  tag = button
+        attribute = id
