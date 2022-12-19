@@ -10,3 +10,73 @@
 
 where:  tag = button
         attribute = id
+
+
+======== CSS ============================================================
+- only move forwards
+
+<button class="btn btn-primary" id="sendButton"
+button[id='sendButton']
+
+where   tag = button
+        attribute = id
+
+# = ID, #sendButton == button[id='sendButton']
+. = class
+======== Descendant =====================================================
+ ul li
+ ul li[id='fruits']
+======== Direct Descendant ==============================================
+ ul>li
+======== Adjacent sibling ===============================================
+ ul+li
+======== Far sibling ====================================================
+ ul~li
+======== Combinator =====================================================
+.button.upload      f.e. <div class="button upload"
+======== Attribute Selectors ============================================
+ = Exact
+    [role="dialog"]
+ ^ Begins with
+    [href^="/index"]
+ $ Ends in
+    [href$=".doc"]
+ * contains
+    [class*="-is-"]
+======== Pseudo-classes =================================================
+>> Selects checkbox which is disabled
+    :disabled
+        input[name="vegetable"]:disabled
+>> Selects checkbox which is enabled
+    :enabled
+        input[name="vegetable"]:enabled
+>> Selects checkbox which is already checked
+    :checked
+        input[name="vegetable"]:checked
+>> Selects all third list of item(s)
+    :nth-child(3)
+        div:nth-child(3)
+>> Selects all second list of item(s)
+    :nth-child(2)
+        div:nth-child(2)
+>> Selects all odd list of item(s)
+    :nth-child(odd) OR :nth-child(2n+1)
+        div:nth-child(odd) OR :nth-child(2n+1)
+>> Selects all even list of item(s)
+    :nth-child(even) OR :nth-child(2n)
+        div:nth-child(even) OR :nth-child(2n)
+>> Selects all last list of item(s)
+    :nth-last-child(1)
+        div:nth-last-child(1)
+>> Matches elements of given tag type ie. button
+    :nth-of-type(odd)
+        button:nth-of-type(odd)
+>> Locate the _first_ child element, which contains 'btn' within the class attribute
+    :first-child
+        [class*='btn']:first-child
+>> Locate the _last_ child element, which contains 'btn' within the class attribute
+    :last-child
+        [class*='btn']:last-child
+========
+
+
